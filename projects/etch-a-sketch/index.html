@@ -9,9 +9,41 @@
 <body>
     <div class="header"><h1>Etch-A-Sketch</h1></div>
     <div class="options-box">
-        <label for="primary-color">Primary Color</label>
-        <input type="color" name="primary-color" id="primary-color">
-        <label for="secondary-color"></label>
+        <fieldset>
+
+            <legend>Options:</legend>
+            <input type="checkbox" name="sketch-mode" id="sketch-mode" checked>
+            <label for="sketch-mode">Rainbow</label>
+            <input type="color" name="primary-color" id="primary-color">
+            <label for="primary-color">Primary Color</label>
+            
+            <input type="color" name="secondary-color" id="secondary-color">
+            <label for="secondary-color">Secondary Color</label>
+
+                <p>Modes</p>
+                <div>
+                    <input type="radio" name="mode" id="draw-mode" checked>
+                    <label for="draw-mode">Draw</label>
+                </div>
+                
+                <div>
+                    <input type="radio" name="mode" id="fill-mode">
+                    <label for="fill-mode">Fill</label>
+                </div>
+                
+
+                <div>
+                    <input type="radio" name="mode" id="eraser-mode">
+                    <label for="eraser-mode">Eraser</label>
+                </div>
+                
+                <input type="checkbox" name="grid" id="grid">
+                <label for="grid">Grid/No Grid</label>
+
+                <input type="button" value="Clear" id="clear">
+
+        
+        </fieldset>
     </div>
     <div class="sketch-box"></div>
     <div class="footer"></div>
