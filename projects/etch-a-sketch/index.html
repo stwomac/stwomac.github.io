@@ -5,21 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="header"><h1>Etch-A-Sketch</h1></div>
-    <div class="options-box">
-        <fieldset>
 
-            <legend>Options:</legend>
-            <input type="checkbox" name="sketch-mode" id="sketch-mode" checked>
-            <label for="sketch-mode">Rainbow</label>
-            <input type="color" name="primary-color" id="primary-color">
-            <label for="primary-color">Primary Color</label>
-            
-            <input type="color" name="secondary-color" id="secondary-color">
-            <label for="secondary-color">Secondary Color</label>
+    <div class="main-content">
+        <div class="options-box">
+            <fieldset>
+                <legend>Options:</legend>
 
+                <div>
+                    <input type="checkbox" name="sketch-mode" id="sketch-mode" checked>
+                    <label for="sketch-mode">Rainbow</label>
+                </div>
+                
+                <div>
+                    <input type="color" name="primary-color" id="primary-color">
+                    <label for="primary-color">Primary Color</label>
+                </div>
+                
+                <div>
+                    <input type="color" name="secondary-color" id="secondary-color">
+                    <label for="secondary-color">Secondary Color</label>
+                </div>
+                
+    
                 <p>Modes</p>
                 <div>
                     <input type="radio" name="mode" id="draw-mode" checked>
@@ -31,21 +42,28 @@
                     <label for="fill-mode">Fill</label>
                 </div>
                 
-
+    
                 <div>
                     <input type="radio" name="mode" id="eraser-mode">
                     <label for="eraser-mode">Eraser</label>
                 </div>
+                 
+                <div>
+                    <input type="checkbox" name="grid" id="grid">
+                    <label for="grid">Grid/No Grid</label>
+                </div>
                 
-                <input type="checkbox" name="grid" id="grid">
-                <label for="grid">Grid/No Grid</label>
-
-                <input type="button" value="Clear" id="clear">
-
-        
-        </fieldset>
+                <div>
+                    <input type="button" value="Clear" id="clear">
+                </div>
+                
+    
+            
+            </fieldset>
+        </div>
+        <div class="sketch-box"></div>
     </div>
-    <div class="sketch-box"></div>
+    
     <div class="footer"><p>Steven Womack - 2023</p></div>
 </body>
 </html>

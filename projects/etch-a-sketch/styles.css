@@ -1,0 +1,34 @@
+*, :after, :before {
+    box-sizing: border-box;
+  }
+
+@media (max-width: 576px) {
+  body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Ubuntu Mono', Arial, sans-serif;
+
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  div.sketch-box {
+    width: 90vw;
+    height: 40vh;
+    background-color: grey;
+    margin-bottom: 5vh;
+
+  }
+
+  div.options-box {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+}
